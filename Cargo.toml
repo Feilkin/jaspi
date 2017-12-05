@@ -1,0 +1,14 @@
+[package]
+name = "jaspi"
+version = "0.1.0"
+authors = ["Aatu Hieta <aatu@hieta.fi>"]
+
+[dependencies]
+serde = "1.0"
+toml = "0.4"
+
+[dependencies.serenity]
+git = "https://github.com/zeyla/serenity.git"
+default-features = false
+features = ["builder", "cache", "client", "framework", "gateway", "http",
+ "models", "standard_framework", "utils"]
